@@ -1,0 +1,293 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body .grid-container{
+	display: grid;
+	
+}
+body{
+	background-color: hsl(180, 20%, 50%);
+	font-family: 'Roboto', sans-serif;
+}
+header{
+	background-color: hsl(180, 20%, 30%);
+	height: 80px;
+	width: 100%;
+}
+
+header figure #logo {
+	height: 12em;
+	margin-top: -50px;
+	margin-left: : 0px;
+}
+
+header figure #logo.changesSize {
+	transition-duration: 2s;
+	/*transition-delay: 2s;*/
+	height: 12em;
+	margin-left: 90px;
+}
+
+.grid-item-box2{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.grid-item-box3{
+	margin-top: 60px;
+	text-align: center;
+	margin-bottom: 100px;
+	font-size: 20px;
+}
+
+.grid-item-box4 figure img#zonmaan{
+  margin-top: -70px;
+  margin-bottom: 100px;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  animation-name: bewegingzonmaan;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bewegingzonmaan {
+  0%   {left:0px; top:0px;}
+  25%  {left:180px; top:0px;}
+  50%  {left:180px; top:140px;}
+  75%  {left:0px; top:140px;}
+  100% {left:0px; top:0px;}
+}
+
+.grid-item-box5 footer{
+	background-color: hsl(180, 20%, 30%);
+	height: 80px;
+	width: 100%;
+}
+
+.grid-item-box5 footer#dagnacht{
+	position: relative;
+	color: #ffcc00;
+	padding-top: 30px;
+	text-align: center;
+}
+.grid-item-box5 #dagnacht{
+	font-size: 20px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+
+ /* vanaf hier alles voor de resolutie 768 px*/
+ @media screen and (min-width: 768px){
+ 	body .grid-container{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-column-row: 1fr 1fr 1fr 1fr;
+	}
+.grid-item-box1{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.grid-item-box1 header figure #logo {
+	height: 20em;
+	margin-top: -110px;
+	margin-left: : 0px;
+}
+
+.grid-item-box1 header figure #logo.changesSize {
+	transition-duration: 2s;
+	/*transition-delay: 2s;*/
+	height: 20em;
+	margin-left: 250px;
+}
+
+.grid-item-box2{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+.grid-item-box2 #datum{
+	font-size: 35px;
+	margin-top: 20px;
+}
+.grid-item-box3{
+	grid-column: 1/2;
+	grid-row: 3/4;
+	font-size: 35px;
+	text-align: center;
+}
+.grid-item-box4{
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+
+.grid-item-box4 figure img#zonmaan{
+	height: 35%;
+	width: 35%;
+}
+@keyframes bewegingzonmaan {
+  0%   {left:0px; top:0px;}
+  25%  {left:500px; top:0px;}
+  50%  {left:500px; top:100px;}
+  75%  {left:0px; top:100px;}
+  100% {left:0px; top:0px;}
+}
+
+.grid-item-box5{
+	grid-column: 1/2;
+	grid-row: 5/6;
+}
+.grid-item-box5 #dagnacht{
+	font-size: 40px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+
+ /* vanaf hier alles voor de resolutie 1366 px*/
+ @media screen and (min-width: 1366px){
+ 	 body .grid-container{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-column-row: 1fr 1fr 1fr 1fr;
+	}
+.grid-item-box1{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+header{
+	height: 150px;
+}
+
+.grid-item-box1 header figure #logo {
+	height: 40em;
+	margin-top: -230px;
+	margin-left: : 0px;
+}
+
+.grid-item-box1 header figure #logo.changesSize {
+	transition-duration: 2s;
+	/*transition-delay: 2s;*/
+	height: 40em;
+	margin-left: 400px;
+}
+.grid-item-box2{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+.grid-item-box2 #datum{
+	font-size: 60px;
+	margin-top: 50px;
+}
+.grid-item-box3{
+	grid-column: 1/2;
+	grid-row: 3/4;
+	font-size: 70px;
+}
+.grid-item-box4{
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+
+
+.grid-item-box4 figure img#zonmaan{
+	height: 30%;
+	width: 30%;
+}
+@keyframes bewegingzonmaan {
+  0%   {left:0px; top:0px;}
+  25%  {left:950px; top:0px;}
+  50%  {left:950px; top:100px;}
+  75%  {left:0px; top:100px;}
+  100% {left:0px; top:0px;}
+}
+.grid-item-box5{
+	grid-column: 1/2;
+	grid-row: 5/6;
+}
+.grid-item-box5 footer{
+	height: 150px;
+}
+.grid-item-box5 #dagnacht{
+	font-size: 50px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+
+
+ /* vanaf hier alles voor de resolutie 1920 px*/
+ @media screen and (min-width: 1920px){
+ 	 body .grid-container{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-column-row: 1fr 1fr 1fr 1fr;
+	}
+.grid-item-box1{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+header{
+	height: 200px;
+}
+
+.grid-item-box1 header figure #logo {
+	height: 40em;
+	margin-top: -210px;
+	margin-left: : 0px;
+}
+
+.grid-item-box1 header figure #logo.changesSize {
+	transition-duration: 2s;
+	/*transition-delay: 2s;*/
+	height: 40em;
+	margin-left: 660px;
+}
+.grid-item-box2{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+.grid-item-box2 #datum{
+	font-size: 90px;
+	margin-top: 50px;
+}
+.grid-item-box3{
+	grid-column: 1/2;
+	grid-row: 3/4;
+	font-size: 70px;
+}
+.grid-item-box4{
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+
+
+.grid-item-box4 figure img#zonmaan{
+	height: 30%;
+	width: 30%;
+}
+@keyframes bewegingzonmaan {
+  0%   {left:0px; top:0px;}
+  25%  {left:1350px; top:0px;}
+  50%  {left:1350px; top:100px;}
+  75%  {left:0px; top:100px;}
+  100% {left:0px; top:0px;}
+}
+.grid-item-box5{
+	grid-column: 1/2;
+	grid-row: 5/6;
+}
+.grid-item-box5 footer{
+	height: 200px;
+}
+.grid-item-box5 #dagnacht{
+	font-size: 70px;
+	padding-top: 20px;
+	text-align: center;
+}
